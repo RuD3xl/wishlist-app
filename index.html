@@ -7,75 +7,78 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Список бажань</h1>
+
+  <header class="header">
+    <h1 class="header__title">Список бажань</h1>
   </header>
 
-  <main>
-    <section>
-      <h2>Додати бажання</h2>
-      <form action="#">
-        <div>
-          <label for="wish-title">Назва бажання:</label>
-          <input type="text" id="wish-title" name="title">
+  <main class="main-container">
+
+    <section class="section">
+      <h2 class="section__title">Додати бажання</h2>
+      <form action="#" class="wish-form">
+        <div class="form-group">
+          <label for="wish-title" class="form-group__label">Назва бажання:</label>
+          <input type="text" id="wish-title" name="title" class="form-group__input">
         </div>
 
-        <div>
-          <label for="wish-price">Ціна (грн):</label>
-          <input type="number" id="wish-price" name="price">
+        <div class="form-group">
+          <label for="wish-price" class="form-group__label">Ціна (грн):</label>
+          <input type="number" id="wish-price" name="price" class="form-group__input">
         </div>
 
-        <div>
-          <label for="wish-priority">Пріоритет:</label>
-          <select id="wish-priority" name="priority">
+        <div class="form-group">
+          <label for="wish-priority" class="form-group__label">Пріоритет:</label>
+          <select id="wish-priority" name="priority" class="form-group__select">
             <option value="low">Низький</option>
             <option value="medium">Середній</option>
             <option value="high">Високий</option>
           </select>
         </div>
 
-        <div>
-          <button type="submit">Додати</button>
+        <div class="form-group">
+          <button type="submit" class="btn">Додати</button>
         </div>
       </form>
     </section>
 
-    <section id="wish-list">
-      <h2>Мої бажання</h2>
+    <section id="wish-list" class="section">
+      <h2 class="section__title">Мої бажання</h2>
 
-      <article>
-        <h3>Бездротові навушники</h3>
-        <img src="assets/img/placeholder.png" alt="Фото бездротових навушників чорного кольору">
-        <p>Ціна: <strong>3 200 грн</strong></p>
-        <p>Пріоритет: <span>Високий</span></p>
-        <p><a href="https://example.com" target="_blank" rel="noopener noreferrer">Посилання на магазин</a></p>
+      <article class="wish-card">
+        <h3 class="wish-card__title">Бездротові навушники</h3>
+        <img src="assets/img/2854363.png" alt="Фото бездротових навушників чорного кольору" class="wish-card__image">
+        <p class="wish-card__price">Ціна: <strong>3 200 грн</strong></p>
+        <p class="wish-card__priority">Пріоритет: <span>Високий</span></p>
+        <p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a></p>
       </article>
 
-      <article>
-        <h3>Механічна клавіатура</h3>
-        <img src="assets/img/placeholder.png" alt="Механічна клавіатура з підсвіткою">
-        <p>Ціна: <strong>4 500 грн</strong></p>
-        <p>Пріоритет: <span>Середній</span></p>
-        <p><a href="https://example.com" target="_blank" rel="noopener noreferrer">Посилання на магазин</a></p>
+      <article class="wish-card">
+        <h3 class="wish-card__title">Механічна клавіатура</h3>
+        <img src="assets/img/2854363.png" alt="Механічна клавіатура з підсвіткою" class="wish-card__image">
+        <p class="wish-card__price">Ціна: <strong>4 500 грн</strong></p>
+        <p class="wish-card__priority">Пріоритет: <span>Середній</span></p>
+        <p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a></p>
       </article>
 
-      <article>
-        <h3>Книга по веб-розробці</h3>
-        <img src="assets/img/placeholder.png" alt="Обкладинка книги по JavaScript та HTML5">
-        <p>Ціна: <strong>850 грн</strong></p>
-        <p>Пріоритет: <span>Низький</span></p>
-        <p><a href="https://example.com" target="_blank" rel="noopener noreferrer">Посилання на магазин</a></p>
+      <article class="wish-card wish-card--bought">
+        <h3 class="wish-card__title">Книга по веб-розробці</h3>
+        <img src="assets/img/2854363.png" alt="Обкладинка книги по JavaScript та HTML5" class="wish-card__image">
+        <p class="wish-card__price">Ціна: <strong>850 грн</strong></p>
+        <p class="wish-card__priority">Пріоритет: <span>Низький</span></p>
+        <p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a></p>
       </article>
     </section>
-  </main>
-  
-  <aside>
-    <h2>Підсумок</h2>
-    <p>Загальна вартість бажань: <strong>8 550 грн</strong></p>
-    <p>Кількість запланованих покупок: <strong>3</strong></p>
-  </aside>
 
-  <footer>
+    <aside class="summary-card">
+      <h2 class="summary-card__title">Підсумок</h2>
+      <p class="summary-card__amount">8 550 грн</p>
+      <p class="summary-card__note">Загальна вартість бажань</p>
+    </aside>
+
+  </main>
+
+  <footer class="footer">
     <p>&copy; 2026 Канівець Ілля</p>
   </footer>
 
