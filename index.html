@@ -10,7 +10,10 @@
 
   <header class="header">
     <div class="header__container">
-      <h1 class="header__title">Список бажань</h1>
+      <div class="header__brand">
+        <img src="assets/img/2854363.png" alt="Логотип списку бажань" class="header__logo">
+        <h1 class="header__title">Список бажань</h1>
+      </div>
       <nav class="nav">
         <a href="#wish-form-section" class="nav__link">Додати бажання</a>
         <a href="#wish-list" class="nav__link">Мої бажання</a>
@@ -27,12 +30,12 @@
         <form action="#" class="wish-form">
           <div class="form-group">
             <label for="wish-title" class="form-group__label">Назва бажання:</label>
-            <input type="text" id="wish-title" name="title" class="form-group__input">
+            <input type="text" id="wish-title" name="title" class="form-group__input" placeholder="Наприклад, навушники">
           </div>
 
           <div class="form-group">
             <label for="wish-price" class="form-group__label">Ціна (грн):</label>
-            <input type="number" id="wish-price" name="price" class="form-group__input">
+            <input type="number" id="wish-price" name="price" class="form-group__input" placeholder="0">
           </div>
 
           <div class="form-group">
@@ -45,7 +48,7 @@
           </div>
 
           <div class="form-group">
-            <button type="submit" class="btn">Додати</button>
+            <button type="submit" class="btn btn--primary">Додати до списку</button>
           </div>
         </form>
       </section>
@@ -54,45 +57,45 @@
         <h2 class="section__title">Мої бажання</h2>
 
         <div class="wish-grid">
-        <article class="wish-card">
-          <img src="assets/img/1_638131849362622388.jpg" alt="Бездротові навушники" class="wish-card__image">
-          <div class="wish-card__body">
-            <h3 class="wish-card__title">Бездротові навушники</h3>
-            <p class="wish-card__price">Ціна: <strong>3 200 грн</strong></p>
-            <p class="wish-card__priority">Пріоритет: <span>Високий</span></p>
-            <p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a></p>
-          </div>
-        </article>
+          <article class="wish-card">
+            <img src="assets/img/1_638131849362622388.jpg" alt="Бездротові навушники" class="wish-card__image">
+            <div class="wish-card__body">
+              <h3 class="wish-card__title">Бездротові навушники</h3>
+              <p class="wish-card__price">3 200 грн</p>
+              <p class="wish-card__meta">Пріоритет: <span class="wish-badge wish-badge--high">Високий</span></p>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a>
+            </div>
+          </article>
 
-        <article class="wish-card">
-          <img src="assets/img/2854363.png" alt="Механічна клавіатура з підсвіткою" class="wish-card__image">
-          <div class="wish-card__body">
-            <h3 class="wish-card__title">Механічна клавіатура</h3>
-            <p class="wish-card__price">Ціна: <strong>4 500 грн</strong></p>
-            <p class="wish-card__priority">Пріоритет: <span>Середній</span></p>
-            <p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a></p>
-          </div>
-        </article>
+          <article class="wish-card">
+            <img src="assets/img/2854363.png" alt="Механічна клавіатура" class="wish-card__image">
+            <div class="wish-card__body">
+              <h3 class="wish-card__title">Механічна клавіатура</h3>
+              <p class="wish-card__price">4 500 грн</p>
+              <p class="wish-card__meta">Пріоритет: <span class="wish-badge wish-badge--medium">Середній</span></p>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a>
+            </div>
+          </article>
 
-        <article class="wish-card">
-          <img src="assets/img/2854363.png" alt="Зарядна станція" class="wish-card__image">
-          <div class="wish-card__body">
-            <h3 class="wish-card__title">Зарядна станція</h3>
-            <p class="wish-card__price">Ціна: <strong>20 500 грн</strong></p>
-            <p class="wish-card__priority">Пріоритет: <span>Середній</span></p>
-            <p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a></p>
-          </div>
-        </article>
+          <article class="wish-card">
+            <img src="assets/img/2854363.png" alt="Зарядна станція" class="wish-card__image">
+            <div class="wish-card__body">
+              <h3 class="wish-card__title">Зарядна станція</h3>
+              <p class="wish-card__price">20 500 грн</p>
+              <p class="wish-card__meta">Пріоритет: <span class="wish-badge wish-badge--medium">Середній</span></p>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a>
+            </div>
+          </article>
 
-        <article class="wish-card wish-card--bought">
-          <img src="assets/img/2854363.png" alt="Обкладинка книги по JavaScript та HTML5" class="wish-card__image">
-          <div class="wish-card__body">
-            <h3 class="wish-card__title">Книга по веб-розробці</h3>
-            <p class="wish-card__price">Ціна: <strong>850 грн</strong></p>
-            <p class="wish-card__priority">Пріоритет: <span>Низький</span></p>
-            <p><a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a></p>
-          </div>
-        </article>
+          <article class="wish-card wish-card--bought">
+            <img alt="Обкладинка книги по JavaScript та HTML5" class="wish-card__image">
+            <div class="wish-card__body">
+              <h3 class="wish-card__title">Книга по веб-розробці</h3>
+              <p class="wish-card__price">850 грн</p>
+              <p class="wish-card__meta">Пріоритет: <span class="wish-badge wish-badge--low">Низький</span></p>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="wish-card__link">Посилання на магазин</a>
+            </div>
+          </article>
         </div>
       </section>
     </main>
@@ -109,7 +112,6 @@
   <footer class="footer">
     <p>&copy; 2026 Канівець Ілля</p>
   </footer>
-
 
   <script src="js/app.js"></script>
 </body>
